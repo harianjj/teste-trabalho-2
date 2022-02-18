@@ -13,7 +13,7 @@ export default function App() {
       <Stack.Navigator>
 
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
-        <Stack.Screen name="Formulario" component={Formulario}/>
+        <Stack.Screen name="Formulario" component={Formulario} options={{headerShown: false}}/>
 
       </Stack.Navigator>
     </NavigationContainer>

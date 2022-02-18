@@ -28,19 +28,11 @@ export default function Mapa( { navigation } ) {
 
   return (
     <View style={styles.container}>
-
-      {/* MAPA */}
       <MapView style={styles.map} onPress={(event) => {
         setLatitude(event.nativeEvent.coordinate.latitude)
         setLongitude(event.nativeEvent.coordinate.longitude)
       }}>
-        <Marker 
-          coordinate={{ latitude: latitude, longitude: longitude }}
-          title='Ponto'
-          description='Ponto adicionado'
-        /> 
-        {
-          
+        {          
           maps.map((marker, id) => <Marker
             key={id}
             coordinate={{ latitude: marker.latitude, longitude: marker.longitude }}
@@ -49,8 +41,6 @@ export default function Mapa( { navigation } ) {
           />)
         }
       </MapView>
-
-
     </View>
   );
 }
