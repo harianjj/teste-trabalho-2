@@ -20,7 +20,6 @@ export default function Mapa( { navigation } ) {
       }
       const response = await fetch('https://mobile.ect.ufrn.br:3003/markers', headerOptions)
       const maps = await response.json()
-
       setMaps(maps)
     }
     getData()
