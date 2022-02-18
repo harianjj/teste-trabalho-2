@@ -2,8 +2,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Home from "./screens/Home.js";
-import Formulario from "./screens/Formulario.js";
+import Home from "./screens/Home";
+import Formulario from "./screens/Formulario";
 
 const Stack = createStackNavigator();
 

@@ -68,6 +68,5 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         padding: 15,
         borderRadius: 7
-    
       }
 });

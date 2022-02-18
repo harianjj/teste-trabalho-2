@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import {  StyleSheet, Image, TouchableOpacity, View} from 'react-native';
 import Constants from 'expo-constants';
 
-import Mapa from '../components/mapa1.js';
+import Mapa from '../components/mapa1';
 
 export default function Home( { navigation } ) { 
   const plusFormulario = () => {

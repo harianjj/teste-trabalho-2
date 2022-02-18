@@ -15,9 +15,7 @@ export default function Home( { navigation } ) {
   const token = "Bearer vv7oTsHdw0X9g5e7QbniP58j3iJY4h6AoOSxMIw2X8xjokSHjF";
 
   useEffect(() => {
-    async function getData() {
-      
-
+    async function getData() {      
       const headerOptions = {
           method: 'GET',
           headers: {
@@ -26,7 +24,6 @@ export default function Home( { navigation } ) {
       }
       const response = await fetch('https://mobile.ect.ufrn.br:3003/markers', headerOptions)
       const maps = await response.json()
-
       setMaps(maps)
     }
     getData()
@@ -92,8 +89,8 @@ export default function Home( { navigation } ) {
 
         <ScrollView style={styles.container2}>
           <View style={styles.formContainer}>
-            <TextInput style={styles.input} placeholder=' Titulo' value={titulo} onChangeText={setTitulo} />
-            <TextInput style={styles.input} placeholder=' Descrição' value={descricao} onChangeText={setDescricao} />
+            <TextInput style={styles.input} placeholder=' Titulo' value={titulo} onChangeText={setTitulo}/>
+            <TextInput style={styles.input} placeholder=' Descrição' value={descricao} onChangeText={setDescricao}/>
             <TouchableOpacity onPress={ () => Enviar() }>
                <Text style={styles.botao}>
                  ADICIONAR
@@ -131,11 +128,11 @@ const styles = StyleSheet.create({
   },
   botao: {
     backgroundColor: '#228B22',
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
     padding: 15,
-    borderRadius: 7,    
+    borderRadius: 5,  
+    borderWidth: 1,  
+    width:280,
+    height:50,
   },
   map: {
     width: Dimensions.get('window').width,
